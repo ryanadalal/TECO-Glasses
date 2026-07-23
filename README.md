@@ -39,7 +39,7 @@ Design iterations `a` through `e`, saved as Fusion 360 archives (`glasses_assemb
 <p float="left">
   <img src="cad/glasses_v2_e.png" width="49%" />
   <img src="cad/glasses_v2_e_2.png" width="49%" />
-  <sub>Version e main assembly with 3D-printed metal electrodes.</sub>
+  <sub>Version (e) main assembly with 3D-printed metal electrodes.</sub>
 </p>
 
 ## PCB (`/pcb`)
