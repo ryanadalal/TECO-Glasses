@@ -1,0 +1,4 @@
+scipy
+bleak
+pyserial
+scikit-learn
