@@ -25,7 +25,7 @@ This repository is a hub — the `main` branch itself contains no code. Each har
   <img src="assets/eog/vertical.png" width="600" alt="Vertical EOG channel showing up/down eye movement" />
 </p>
 
-Note that due to the electrode placement horizontal data points mirror movements in the vertical data points (ie. changing gaze vertically affects both lines). However, during vertical eye movement, vertical data points have greater magnitude and the horizontal eye movements do not trigger similar responses for vertical data points, make it possible to clearly distinguish which direction the user moved their eyes.
+Note that due to the electrode placement horizontal data points mirror movements in the vertical data points (ie. changing gaze vertically affects both lines). However, vertical data points have greater magnitude than horizontal ones during vertical eye movement and horizontal eye movements do not trigger similar responses for vertical data points, making it possible to clearly distinguish which direction the user moved their eyes.
 
 **Alpha band response (eyes closed)** — on the v3 hardware, closing the eyes produces a clear, noticeable spike in alpha-band power compared to eyes open, visible both in the raw channel and in the band-power comparison.
 
