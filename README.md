@@ -49,19 +49,13 @@ The glasses run on a 0.5 Wh rechargable battery, which provides a minimum of 3 h
 
 ## Branches
 
-| Branch                                                                                       | Base platform    | Status                                 |
-| -------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------- |
-| [`v_one`](https://github.com/ryanadalal/TECO-Glasses/tree/v_one)                             | OpenEarable (v1) | Fully functional                       |
-| [`v_two`](https://github.com/ryanadalal/TECO-Glasses/tree/v_two)                             | OpenEarable 2.0  | Non-functional (PCB connector error)   |
-| [`v_three`](https://github.com/ryanadalal/TECO-Glasses/tree/v_three)                         | OpenEarable 2.0  | Incomplete (board untested)            |
-| [`afe-expansion-board`](https://github.com/ryanadalal/TECO-Glasses/tree/afe-expansion-board) | OpenEarable 2.0  | Incomplete (general-purpose ExG board) |
 
-| Branch                | OE Version | Board Type | ADC                                            | Channels (used/total) | Electrodes                                                                | Special Features                      | Complete            | Testing    | Notes                                                                                                                      |
-| --------------------- | ---------- | ---------- | ---------------------------------------------- | --------------------- | ------------------------------------------------------------------------- | ------------------------------------- | ------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------- | --- |
-| `v_one`               | 1.0        | Monolithic | AD7124 w/ custom instrumentation-amp front end | 2 / 3                 | Datwyler soft pulse electrodes                                            | Exposed I2C pins for future expansion | Yes                 | Passed     |                                                                                                                            |
-| `v_two`               | 2.0        | Expansion  | AD7124 w/ custom in-amp setup                  | 2 / 3                 | `a`: Datwyler soft pulse electrodes. `b`–`e`: 3D-printed metal electrodes | Exposed I2C pins for future expansion | Yes                 | Passed     | Fatal flaw: can not be assembled as is - PCB connector is rotated 180°, so the board fails to connect to the OE2 mainboard |
-| `v_three`             | 2.0        | Expansion  | AFE1594                                        | 2 / 2                 | Same as v2                                                                | Right leg drive and configurable gain | Firmware incomplete | Incomplete | Library for AFE complete, OE firmware does not integrate library yet                                                       |
-| `afe-expansion-board` | 2.0        | Expansion  | AFE1594                                        | X / 4                 | 6 exposed electrode pins                                                  | v3 features + exposed I2C and GPIO    | Firmware incomplete | Incomplete | Same as v3                                                                                                                 |     |
+| Branch | OE Version | Board Type | ADC | Channels (used/total) | Electrodes | Special Features | Complete | Testing | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| [`v_one`](https://github.com/ryanadalal/TECO-Glasses/tree/v_one) | 1.0 | Monolithic | AD7124 w/ custom instrumentation-amp front end | 2 / 3 | Datwyler soft pulse electrodes | Exposed I2C pins for future expansion | Yes | Passed | |
+| [`v_two`](https://github.com/ryanadalal/TECO-Glasses/tree/v_two) | 2.0 | Expansion | AD7124 w/ custom in-amp setup | 2 / 3 | `a`: Datwyler soft pulse electrodes. `b`–`e`: 3D-printed metal electrodes | Exposed I2C pins for future expansion | Yes | Passed | Fatal flaw: can not be assembled as is - PCB connector is rotated 180°, so the board fails to connect to the OE2 mainboard |
+| [`v_three`](https://github.com/ryanadalal/TECO-Glasses/tree/v_three) | 2.0 | Expansion | AFE1594 | 2 / 2 | Same as v2 | Right leg drive and configurable gain | Firmware incomplete | Incomplete | Library for AFE complete, OE firmware does not integrate library yet |
+| [`afe-expansion-board`](https://github.com/ryanadalal/TECO-Glasses/tree/afe-expansion-board) | 2.0 | Expansion | AFE1594 | X / 4 | 6 exposed electrode pins | v3 features + exposed I2C and GPIO | Firmware incomplete | Incomplete | Same as v3 | |
 
 ### `v_one` — OpenEarable ExG Glasses v1
 
