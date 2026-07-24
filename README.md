@@ -28,6 +28,8 @@ Analog front-end board designed in EasyEDA Pro.
 
 ![Schematic](pcb/AFE_expansion_board_schematic.png)
 
+Note: for this board, the GPIO 1 pin and the CS pin must be soldered onto the board and inserted into the header on the OE board because the OE does not expose enough GPIO lines through the connector.
+
 ## Firmware
 
 The firmware for this version is incomplte. The AFE1594 library is complete but has not yet been implemented for the OpenEarable 2.0. The firmware for the OpenEarable 2.0 can be on the `ExG` branch of the [OpenEarable2 GitHub repository](https://github.com/OpenEarable/open-earable-2).
